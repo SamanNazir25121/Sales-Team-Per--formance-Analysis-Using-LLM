@@ -1,7 +1,7 @@
-# Sales-Team-Per--formance-Analysis-Using-LLM
-# Sales Performance Analysis API
+# Sales-Team-Performance Analysis Using LLM
 
-This project provides an API that helps you analyze and summarize sales performance data for individual sales representatives and the entire sales team. It uses advanced technology to generate insightful analyses and practical feedback.
+
+This project provides an API that helps to analyze and summarize sales performance data for individual sales representatives and the entire sales team. It uses state-of-the-art model: GPT-3.5 to generate analysis and practical feedback.
 
 ## Table of Contents
 - [Features](#features)
@@ -17,40 +17,26 @@ This project provides an API that helps you analyze and summarize sales performa
 - [License](#license)
 
 ## Features
-- **Individual Sales Analysis**: Provides detailed insights and feedback for each sales representative based on their performance.
-- **Team Performance Summary**: Offers an overview and key insights for the entire sales team.
-- **Sales Trends and Forecasting**: Examines sales trends over time and makes predictions.
-- **Smart Analysis**: Uses OpenAI's GPT-3.5 to create human-like analysis and suggestions.
-- **Easy to Use**: Built with Flask, making it easy to connect with other services or websites.
+- **Individual Sales Performance**: It gives insights and feedback for each sales representative based on their performance.
+- **Team Performance **: It gives an overview and insights for the entire sales team.
+- **Sales Trends and Forecasting**: Examines sales trends over time by Monthly or Quarterly and makes predictions.
 
 ## How It Works
-The application is made up of different parts:
 
-1. **Data Loading**: Loads and processes sales data from a CSV file using Pandas.
+1. **Data Loading**: I have load sales data from a CSV file using Pandas.
 2. **Analysis**:
    - *Individual Performance*: Summarizes key performance details for each sales rep.
    - *Team Performance*: Summarizes overall team performance.
    - *Trends Analysis*: Looks at data over time to spot trends and predict future performance.
 3. **OpenAI Integration**: Uses OpenAI’s GPT-3.5 to generate detailed analysis and feedback based on the data.
-4. **API Endpoints**: Provides RESTful API endpoints to access the different features.
+4. **API Endpoints**: Provides RESTful API endpoints to access the different features such as api/rep_performance','/api/team_performance' /api/performance_trends using GET methid.
 5. **Error Handling**: Manages any mistakes or problems in a user-friendly way.
 
 ## Technologies Used
-- **Python 3.7+**: The programming language used to build the app.
-- **Flask**: The web framework used to create the API.
-- **Pandas**: For working with and analyzing data.
-- **NumPy**: For numerical operations.
-- **OpenAI GPT-3.5**: For generating natural language insights.
+- Python 3.9
+- Flask API
+- Pandas Library
+- NumPy Library 
+- OpenAI GPT-3.5 API_KEY
+- POSTMAN to test API
 
-## Requirements
-Before you start, make sure you have the following on your Mac OS:
-- Python 3.7 or higher
-- pip (a tool to install Python packages)
-- git (a tool to clone repositories)
-
-## Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/sales-performance-analysis-api.git
-   cd sales-performance-analysis-api
